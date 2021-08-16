@@ -1,9 +1,12 @@
-
+//importing our scss
+import './styles/App.scss';
+//importing components
+import Topbar from './components/Topbar';
 
 function App() {
   return (
     <div className="App">
-      <h1>TYest</h1>
+      <Topbar />
     </div>
   );
 }

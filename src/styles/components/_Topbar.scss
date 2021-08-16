@@ -1,0 +1,55 @@
+.topbar{
+    width: 100%;
+    height: 50px;
+    padding: 1rem 5rem;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.topbarWrapper{
+    height: 100%;
+    padding: 0px 20px;
+    @include flex(row, space-evenly, center);
+    .topLeft{
+        flex: 1 1 40rem;
+    }
+    .topRight{
+        flex: 1 1 40rem;
+        @include flex(row, flex-end, center);
+    }
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 30px;
+    color: darkblue;
+    cursor: pointer;
+}
+
+//styling our notifications bell
+.topbarIconContainer{
+    position: relative;
+    margin-right: 1rem;
+    .topIconBadge{
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        top: -5px;
+        right: -5px;
+        @include flex(row, center, center);
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+
+    }
+}
+
+.topAvatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+}

@@ -1,0 +1,13 @@
+//defining our mixins
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+//import our base css
+@import './base/global';
+
+//import our components' styling
+@import './components/Topbar';
