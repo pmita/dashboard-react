@@ -7,7 +7,20 @@
 }
 
 //import our base css
+@import './abstract/variables';
 @import './base/global';
+
+
+//Adding css to our App.js
+.App{
+    .container{
+        @include flex(row, flex-start, flex-start);
+        .others{
+            flex: 4;
+        }
+    }
+}
 
 //import our components' styling
 @import './components/Topbar';
+@import './components/Sidebar';
