@@ -3,6 +3,8 @@ import './styles/App.scss';
 //importing components
 import Topbar from './components/Topbar';
 import Sidebar from './components/Sidebar';
+//importing our pages
+import Home from './pages/Home';
 
 function App() {
   return (
@@ -10,9 +12,7 @@ function App() {
       <Topbar />
       <div className="container">
         <Sidebar />
-        <div className="others">
-          Test
-        </div>
+        <Home />
       </div>
     </div>
   );
