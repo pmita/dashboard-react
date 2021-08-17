@@ -1,0 +1,40 @@
+.widget{
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    margin-right: 20px;
+    h2{
+        font-weight: 600;
+    }
+}
+
+.widgetItem{
+    @include flex(row, space-between, center);
+    margin: 20px 0;
+    .widgetImage{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .widgetUser{
+        @include flex(column, flex-start, flex-start);
+    }
+    button{
+        @include flex(row, flex-start, center);
+        border: none;
+        border-radius: 10px;
+        padding: 7px 10px;
+        background-color: #eeeef7;
+        color: #555;
+        cursor: pointer;
+        .widgetIcon{
+            font-size: 16px !important;
+            margin-right: 5px;
+        }
+    }
+}
+
+.widgetSmall{
+    flex: 1;
+}

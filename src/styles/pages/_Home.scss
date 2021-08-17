@@ -1,3 +1,8 @@
 .home{
     flex: 4;
 }
+
+.homeWidgets{
+    @include flex(row, flex-start, flex-start);
+    padding: 20px;
+}

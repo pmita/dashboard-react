@@ -4,6 +4,8 @@ import FeaturedInfo from '../components/FeaturedInfo';
 import Chart from '../components/Chart';
 //importing our assets
 import {userData} from '../assets/data/ChartData';
+import WidgetSmall from '../components/WidgetSmall';
+import WidgetLarge from '../components/WidgetLarge';
 
 export default function Home() {
     return (
@@ -15,6 +17,10 @@ export default function Home() {
                    dataKey = "Active User"
                    grid = {true} 
             />
+            <div className="homeWidgets">
+                <WidgetSmall />
+                <WidgetLarge />
+            </div>
         </section>
     )
 }
